@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_marginLeft="100px"
+            android:id="@+id/ac_my_purse_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="我的钱包"
+            android:textColor="@color/usercentertextcolor"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:background="#00000000"
+            android:id="@+id/title_iv_back"
+            android:layout_width="45px"
+            android:layout_height="45px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24px"
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/back_black" />
+
+    </RelativeLayout>
+</LinearLayout>

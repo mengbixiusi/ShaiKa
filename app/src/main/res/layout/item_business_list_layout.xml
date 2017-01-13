@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/delicious_frag_ll_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="260px"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="24px"
+        android:paddingTop="24px">
+
+        <ImageView
+            android:layout_width="260px"
+            android:layout_height="240px"
+            android:scaleType="fitXY"
+            android:src="@mipmap/business" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20px"
+            android:text="本月会员储值6000元"
+            android:textSize="22px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24px"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24px"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="375px"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="好想你专卖店（兰德中心店）"
+                android:textSize="30px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="24px"
+                android:background="@drawable/shape_busi_shai"
+                android:gravity="center"
+                android:paddingTop="2px"
+                android:paddingBottom="2px"
+                android:paddingRight="4px"
+                android:paddingLeft="4px"
+                android:text="晒"
+                android:textColor="@color/white"
+                android:textSize="22px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24px"
+            android:layout_marginTop="22px"
+            android:gravity="center_vertical">
+
+            <com.iarcuschin.simpleratingbar.SimpleRatingBar
+                android:id="@+id/item_recylerview_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:clickable="false"
+                app:starBorderWidth="5"
+                app:borderColor="@color/theamcolor"
+                app:fillColor="@color/theamcolor"
+                app:numberOfStars="5"
+                app:rating="3"
+                app:starSize="42px"
+                app:stepSize="0.5" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12px"
+                android:layout_toRightOf="@id/item_recylerview_star"
+                android:text="晒卡价："
+                android:textSize="24px" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@id/textView2"
+                android:layout_toRightOf="@id/textView2"
+                android:text="9.8折"
+                android:textSize="24px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24px"
+            android:layout_marginTop="22px"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="品茶"
+                android:textSize="22px" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="1dp"
+                android:layout_height="22px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8px"
+                android:layout_marginRight="8px"
+                android:layout_toEndOf="@id/textView4"
+                android:layout_toRightOf="@id/textView4"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/textView4"
+                android:layout_toEndOf="@id/view"
+                android:layout_toRightOf="@id/view"
+                android:text="国贸360"
+                android:textSize="22px" />
+
+            <TextView
+                android:layout_marginRight="24px"
+                android:id="@+id/textView7"
+                android:layout_width="64px"
+                android:layout_height="28px"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/bg_gary"
+                android:gravity="center"
+                android:padding="2px"
+                android:text="50m"
+                android:textSize="24px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24px"
+            android:layout_marginTop="32px"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:src="@mipmap/like" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12px"
+                android:layout_toEndOf="@id/imageView"
+                android:layout_toRightOf="@id/imageView"
+                android:text="666人已买单"
+                android:textSize="24px" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/textView6"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignTop="@id/textView5"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_toEndOf="@id/textView5"-->
+            <!--android:layout_toRightOf="@id/textView5"-->
+            <!--android:text="人已买单"-->
+            <!--android:textSize="11dp" />-->
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="24px"
+            android:layout_marginTop="30px"
+            android:background="@color/bg_gary" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24px"
+            android:layout_marginTop="20px">
+
+            <TextView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_busi_xiang"
+                android:gravity="center"
+                android:paddingTop="2px"
+                android:paddingBottom="2px"
+                android:paddingRight="4px"
+                android:paddingLeft="4px"
+                android:text="享"
+                android:textColor="@color/white"
+                android:textSize="22px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12px"
+                android:layout_toRightOf="@id/imageView2"
+                android:text="充值1000元送500元"
+                android:textSize="22px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20px"
+            android:layout_marginLeft="24px"
+            android:layout_marginTop="16px">
+
+            <TextView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_busi_xiang"
+                android:gravity="center"
+                android:paddingTop="2px"
+                android:paddingBottom="2px"
+                android:paddingRight="4px"
+                android:paddingLeft="4px"
+                android:src="@mipmap/ic_launcher"
+                android:text="享"
+                android:textColor="@color/white"
+                android:textSize="22px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12px"
+                android:layout_toEndOf="@id/imageView3"
+                android:layout_toRightOf="@id/imageView3"
+                android:text="充值2000元送1000元"
+                android:textSize="22px" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

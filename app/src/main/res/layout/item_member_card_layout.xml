@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="#fff"
+    android:id="@+id/ll_member_card"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:layout_marginLeft="24px"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@mipmap/test_imag_no_use" />
+
+    <TextView
+        android:textColor="#ff0000"
+        android:id="@+id/mtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingBottom="20dp"
+        android:layout_marginLeft="40dp"
+        android:paddingTop="20dp"
+        android:text="￥1000" />
+
+    <View
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="0.5dp"
+        android:layout_height="20dp"
+        android:background="#C8C8C8" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="有效期：2016.11—2016.12" />
+</LinearLayout>
+

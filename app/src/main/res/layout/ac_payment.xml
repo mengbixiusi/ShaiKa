@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f0f0f0"
+    >
+
+    <include layout="@layout/pay_title" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@drawable/home_white_bg">
+
+        <EditText
+            android:id="@+id/pay_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pay_money"
+            android:imeOptions="actionUnspecified"
+            android:maxLines="1"
+            android:digits="1234567890."
+            android:singleLine="true" />
+    </android.support.design.widget.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@drawable/home_white_bg"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5px"
+            android:layout_marginLeft="24px"
+            android:layout_marginTop="5px"
+            android:text="@string/paid"
+            android:textSize="24px"
+            android:textColor="#666666"
+            />
+
+        <TextView
+            android:id="@+id/pay_paid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5px"
+            android:layout_marginRight="24px"
+            android:layout_marginTop="5px"
+            android:text="￥ 00"
+            android:textColor="#ef6d21"
+            android:textSize="34px" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="64px"
+        android:layout_marginLeft="24px"
+        android:text="@string/shared_per"
+        android:textColor="#666666"
+        android:gravity="center_vertical"
+        android:textSize="22px"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@drawable/home_white_bg">
+
+        <ImageView
+            android:id="@+id/pay_img"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_marginBottom="5px"
+            android:layout_marginLeft="24px"
+            android:layout_marginTop="5px"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/memberphoto" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/pay_img"
+            android:text="李晨分享了1000元的卡"
+            android:textSize="28px"
+            android:textColor="#333333"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="64px"
+        android:layout_marginLeft="24px"
+        android:text="选择支付方式"
+        android:textColor="#666666"
+        android:gravity="center_vertical"
+        android:textSize="22px"
+        />
+
+    <RadioGroup
+        android:id="@+id/rg_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24px"
+        >
+        <RadioButton
+            android:id="@+id/btn_1"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:text="微信支付"
+            android:textSize="28px"
+            android:textColor="@android:color/black"
+            android:gravity="center_vertical"
+            android:button="@null"
+            android:drawableLeft="@mipmap/app_wxzf"
+            android:drawablePadding="24px"
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="44px"
+            android:drawableRight="@drawable/pay_check_change"
+            />
+        <RadioButton
+            android:id="@+id/btn_2"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:text="支付宝支付"
+            android:textSize="28px"
+            android:textColor="@android:color/black"
+            android:gravity="center_vertical"
+            android:button="@null"
+            android:drawableLeft="@mipmap/zfb_zf"
+            android:drawablePadding="24px"
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="44px"
+            android:drawableRight="@drawable/pay_check_change"
+            />
+        <RadioButton
+            android:id="@+id/btn_3"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:text="先花后付支付"
+            android:textSize="28px"
+            android:textColor="@android:color/black"
+            android:gravity="center_vertical"
+            android:button="@null"
+            android:drawableLeft="@mipmap/app_xhhf"
+            android:drawablePadding="24px"
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="44px"
+            android:drawableRight="@drawable/pay_check_change"
+            />
+
+    </RadioGroup>
+    
+
+    <Button
+        android:id="@+id/pay"
+        android:layout_width="600px"
+        android:layout_height="64px"
+        android:layout_marginTop="152px"
+        android:background="@drawable/shaika_youhuibuy"
+        android:text="@string/check"
+        android:textColor="@color/white"
+        android:textSize="28px"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        />
+
+</LinearLayout>

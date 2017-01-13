@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/plugin_camera_image_folder_headview"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="3dp"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:background="#00000000"
+            android:id="@+id/ac_present_location_back"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/back_black" />
+
+        <TextView
+            android:id="@+id/chat_publish_complete_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="当前位置"
+            android:textColor="@color/usercentertextcolor"
+            android:textSize="20sp" />
+
+        <!--<Button-->
+        <!--android:id="@+id/chat_publish_complete_publish"-->
+        <!--android:layout_width="55dp"-->
+        <!--android:layout_height="27dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:text="完成"-->
+        <!--android:textColor="#fff"-->
+        <!--android:textSize="16sp" />-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:clickable="true" />
+
+        <Button
+            android:id="@+id/request"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="10dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@color/bg_gary">
+
+        <TextView
+            android:layout_marginLeft="24px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前地址" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_marginLeft="24px"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_mine"
+            android:layout_width="550px"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="您当前的位置信息" />
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:id="@+id/ac_present_location_rl_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="570px"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/discover_line" />
+
+            <TextView
+                android:layout_marginLeft="5px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="重新定位" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@color/bg_gary">
+
+        <TextView
+            android:layout_marginLeft="24px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="附近地址" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_location_nearby"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3" />
+
+</LinearLayout>

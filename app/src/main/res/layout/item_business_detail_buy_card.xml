@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--商户详情界面购卡-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/business"
+        android:layout_marginTop="24px"
+        android:layout_marginBottom="24px"
+        android:layout_marginLeft="24px"
+        android:layout_width="160px"
+        android:layout_height="134px" />
+
+    <TextView
+        android:textSize="26px"
+        android:textColor="@color/mblack"
+        android:layout_marginTop="46px"
+        android:layout_marginLeft="196px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="荼啡茶茶馆"/>
+
+    <TextView
+        android:textSize="30px"
+        android:layout_marginTop="112px"
+        android:layout_marginLeft="196px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="充100元送200元"/>
+
+    <LinearLayout
+        android:layout_marginRight="24px"
+        android:layout_marginTop="48px"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textSize="22px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="666"/>
+        <TextView
+            android:textSize="22px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人已购买"/>
+    </LinearLayout>
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:src="@mipmap/click_favorite"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="160px"
+        android:layout_marginTop="90px"
+        android:layout_width="48px"
+        android:layout_height="48px"
+        android:text="购卡"/>
+
+    <Button
+        android:textColor="@color/theamcolor"
+        android:background="@drawable/shape_btn_hollow_bg"
+        android:layout_alignParentRight="true"
+        android:textSize="26px"
+        android:layout_marginRight="24px"
+        android:layout_marginLeft="620px"
+        android:layout_marginTop="90px"
+        android:layout_width="102px"
+        android:layout_height="48px"
+        android:text="购卡"/>
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ac_mycollection_back"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/theamcolor"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/ac_collection_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100px"
+            android:text="@string/mycollection"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <ImageButton
+            android:background="@color/black_btn_color_normal"
+            android:id="@+id/title_iv_back"
+            android:layout_width="45px"
+            android:layout_height="45px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24px"
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/left" />
+
+    </RelativeLayout>
+
+    <!--<RelativeLayout-->
+    <!--android:paddingBottom="120dp"-->
+    <!--android:gravity="center"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:src="@mipmap/ic_launcher"-->
+    <!--android:id="@+id/imageView11" />-->
+    <!--<TextView-->
+    <!--android:paddingBottom="5dp"-->
+    <!--android:gravity="center"-->
+    <!--android:textSize="18dp"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="没有收藏"-->
+    <!--android:layout_below="@+id/imageView11"-->
+    <!--android:layout_alignLeft="@+id/imageView11"-->
+    <!--android:layout_alignStart="@+id/imageView11"-->
+    <!--android:id="@+id/textView9" />-->
+    <!--<TextView-->
+    <!--android:gravity="center"-->
+    <!--android:text="快去收藏喜欢的商品吧"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/textView9"-->
+    <!--android:layout_alignLeft="@+id/textView9"-->
+    <!--android:layout_alignStart="@+id/textView9" />-->
+    <!--</RelativeLayout>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/bg_gary"
+        android:gravity="center"
+        android:paddingBottom="120dp">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@mipmap/collection_test" />
+    </RelativeLayout>
+
+</LinearLayout>

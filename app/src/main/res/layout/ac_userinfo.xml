@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gary"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/ac_settup_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100px"
+            android:text="个人资料"
+            android:textColor="@color/usercentertextcolor"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/title_iv_back"
+            android:layout_width="45px"
+            android:layout_height="45px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24px"
+            android:background="#00000000"
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/back_black" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16px"
+        android:background="@color/bg_gary" />
+
+    <RelativeLayout
+        android:id="@+id/ac_userinfo_rl_photo"
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:background="@color/white"
+        android:clickable="true"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:src="@mipmap/memberphoto"
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16px"
+            android:layout_toLeftOf="@+id/ac_userinfo_photo_iv_right"
+            android:layout_toStartOf="@+id/ac_userinfo_photo_iv_right" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="32px"
+            android:layout_marginLeft="24px"
+            android:layout_marginStart="24px"
+            android:layout_marginTop="32px"
+            android:gravity="center"
+            android:text="晒卡头像"
+            android:textColor="@color/usercentertextcolor"
+            android:textSize="30px" />
+
+        <ImageView
+            android:id="@+id/ac_userinfo_photo_iv_right"
+            android:layout_width="24px"
+            android:layout_height="24px"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="42px"
+            android:layout_marginRight="42px"
+            android:src="@mipmap/right" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/bg_line" />
+    <RelativeLayout
+        android:id="@+id/ac_userinfo_rl_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:background="@color/white"
+        android:clickable="true"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/ac_userinfo_tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16px"
+            android:layout_toLeftOf="@+id/ac_userinfo_nickname_iv_right"
+            android:layout_toStartOf="@+id/ac_userinfo_nickname_iv_right"
+            android:text=""
+            android:textSize="22px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="32px"
+            android:layout_marginLeft="24px"
+            android:layout_marginStart="24px"
+            android:layout_marginTop="32px"
+            android:gravity="center"
+            android:text="晒卡昵称"
+            android:textColor="@color/usercentertextcolor"
+            android:textSize="30px" />
+
+        <ImageView
+            android:id="@+id/ac_userinfo_nickname_iv_right"
+            android:layout_width="24px"
+            android:layout_height="24px"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="42px"
+            android:layout_marginRight="42px"
+            android:src="@mipmap/right" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/bg_line" />
+
+    <RelativeLayout
+        android:id="@+id/ac_userinfo_rl_sex"
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:background="@color/white"
+        android:clickable="true"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/ac_userinfo_tv_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16px"
+            android:layout_toLeftOf="@+id/ac_userinfo_sex_iv_right"
+            android:layout_toStartOf="@+id/ac_userinfo_sex_iv_right"
+            android:text=""
+            android:textSize="22px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="32px"
+            android:layout_marginLeft="24px"
+            android:layout_marginStart="24px"
+            android:layout_marginTop="32px"
+            android:gravity="center"
+            android:text="性别"
+            android:textColor="@color/usercentertextcolor"
+            android:textSize="30px" />
+
+        <ImageView
+            android:id="@+id/ac_userinfo_sex_iv_right"
+            android:layout_width="24px"
+            android:layout_height="24px"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="42px"
+            android:layout_marginRight="42px"
+            android:src="@mipmap/right" />
+    </RelativeLayout>
+
+</LinearLayout>

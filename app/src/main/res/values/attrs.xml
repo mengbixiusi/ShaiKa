@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="EricToolBar">
+        <attr name="rightButtonIcon" format="reference" />
+        <attr name="liftButtonIcon" format="reference" />
+        <attr name="liftText" format="reference|string" />
+        <attr name="isShowSearchView" format="boolean" />
+        <attr name="rightText" format="reference|string" />
+        <attr name="titleSize" format="dimension" />
+    </declare-styleable>
+</resources>

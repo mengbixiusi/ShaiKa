@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">晒卡</string>
+
+    <string name="service_phone">tel:037156751188</string>
+    <string name="home">首页</string>
+    <string name="business">商户</string>
+    <string name="shaika">晒卡</string>
+    <string name="mine">我的</string>
+    <!--个人中心-->
+    <string name="purse">我的钱包</string>
+    <string name="order">我的订单</string>
+    <string name="aboutus">关于我们</string>
+    <string name="contactservice">联系客服</string>
+    <string name="mycomment">我的点评</string>
+    <string name="cooperation">加盟合作</string>
+    <string name="allorder">全部订单</string>
+    <string name="scan">扫一扫</string>
+    <string name="scanpay">付款</string>
+    <string name="mycollection">我的收藏</string>
+    <string name="feedback">用户反馈</string>
+    <string name="findbackPsw">找回密码</string>
+    <string name="phonenumber">请输入手机号</string>
+    <string name="verificationcode">请输入验证码</string>
+    <string name="newpassword">请输入新密码</string>
+    <string name="verificationcodelogin">验证码登录</string>
+    <string name="registpassword">请输入密码</string>
+
+    <!--登陆,注册，找回密码 错误 提示信息-->
+    <string name="error_username_toast">用户名不能为空</string>
+    <string name="error_psw_toast">密码不能为空</string>
+    <string name="error_code_toast">验证码不能为空</string>
+    <string name="error_mobile1_toast">手机号不能为空</string>
+    <string name="error_mobile2_toast">手机号格式不正确</string>
+    <string name="title_activity_login1">Sign in</string>
+
+    <!--付款界面-->
+    <string name="pay_money">订单金额</string>
+    <string name="paid">实付金额:</string>
+    <string name="shared_per">共享人</string>
+    <string name="check">优惠买单</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="head">这里是HeadView</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+
+    <string-array name="countries_array">
+        <item>肉夹馍</item>
+        <item>五花肉</item>
+        <item>鸡肉</item>
+        <item>烤肉</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ac_mycollection_back"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/theamcolor"
+        android:gravity="center_vertical">
+        <RelativeLayout
+            android:id="@+id/ac_member_card_rl_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/ac_mycollection_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="100px"
+                android:text="会员卡"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <ImageButton
+                android:background="#00000000"
+                android:id="@+id/title_iv_back"
+                android:layout_width="45px"
+                android:layout_height="45px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="24px"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:src="@mipmap/left" />
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/ac_recycler_member_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

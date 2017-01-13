@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/ac_change_userinfo_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100px"
+            android:text="修改个人资料"
+            android:textColor="@color/usercentertextcolor"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/title_iv_back"
+            android:layout_width="45px"
+            android:layout_height="45px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24px"
+            android:background="#00000000"
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/back_black" />
+
+        <Button
+            android:id="@+id/ac_change_userinfo_btn_commit"
+            android:layout_width="120px"
+            android:layout_height="80px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="72px"
+            android:background="@drawable/shape_btn_bg"
+            android:text="提交" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/ac_change_userinfo_et_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="72px"
+        android:layout_marginTop="30px"
+        android:background="@color/white"
+        android:hint="请输入" />
+</LinearLayout>
